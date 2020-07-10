@@ -1,0 +1,20 @@
+/* These are used to set universal properties, elimiating any browser changes like added margin or padding */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* We declare this root (or html) font-size value so we can use rem units elsewhere */
+html {
+  // Defines what 1rem is
+  /* We will use a percentage, so the user can change the font-size in his browser to adjust for his needs. If we use pixels, it will not change! */
+  font-size: 62.5%;
+}
+
+body {
+  /* Includes padding and border in our sizing  */
+  box-sizing: border-box;
+}
