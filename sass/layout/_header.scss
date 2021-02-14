@@ -13,6 +13,11 @@
   /* This is for the logo box position aboslute, since position: aboslute; starts counting from the first position relative parent element */
   position: relative;
 
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
   &__logo-box {
     /* Sets absolute position relative to first parents relative position */
     position: absolute;
